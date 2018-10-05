@@ -6,7 +6,7 @@ ENV TOMCAT_MAJOR_VERSION=7
 ENV TOMCAT_VERSION=7.0.77
 ENV TOMCAT_HOME=/opt/apache-tomcat-$TOMCAT_VERSION
 
-# Download mysql-server and tomcat 7
+# Prepare the installation of mysql-server and tomcat 7
 RUN apt-get update && apt-get install -y lsb-release && \
   wget https://dev.mysql.com/get/mysql-apt-config_0.8.4-1_all.deb && \
   dpkg -i mysql-apt-config_0.8.4-1_all.deb && rm -f mysql-apt-config_0.8.4-1_all.deb && \
