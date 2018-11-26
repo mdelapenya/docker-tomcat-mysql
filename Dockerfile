@@ -26,6 +26,7 @@ ADD start-mysqld.sh /start-mysqld.sh
 ADD run.sh /run.sh
 RUN chmod 755 /*.sh
 ADD my.cnf /etc/mysql/conf.d/my.cnf
+RUN chmod 644 /etc/mysql/conf.d/my.cnf
 ADD supervisord-tomcat.conf /etc/supervisor/conf.d/supervisord-tomcat.conf
 ADD supervisord-mysqld.conf /etc/supervisor/conf.d/supervisord-mysqld.conf
 
