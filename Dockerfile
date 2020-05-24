@@ -1,9 +1,9 @@
-FROM openjdk:7-jdk
+FROM openjdk:8-jdk
 MAINTAINER Manuel de la Peña <manuel.delapenya@liferay.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV TOMCAT_MAJOR_VERSION=7
-ENV TOMCAT_VERSION=7.0.77
+ENV TOMCAT_MAJOR_VERSION=8
+ENV TOMCAT_VERSION=8.5.55
 ENV TOMCAT_HOME=/opt/apache-tomcat-$TOMCAT_VERSION
 
 # Prepare the installation of mysql-server and tomcat 7
