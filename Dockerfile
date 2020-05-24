@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-MAINTAINER Manuel de la Peña <manuel.delapenya@liferay.com>
+MAINTAINER Siddharth Mishra <01siddharthmishra@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TOMCAT_MAJOR_VERSION=8
